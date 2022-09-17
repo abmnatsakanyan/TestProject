@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Coin: Decodable {
+struct Coin: Decodable {
     var identifier: String
     let name: String
     var iconUrl: URL?

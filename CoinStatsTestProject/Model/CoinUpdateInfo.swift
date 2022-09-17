@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CoinUpdateInfo: Decodable {
+struct CoinUpdateInfo: Decodable {
     let identifier: String
     let rank: Int?
     let priceUSD: Double?
@@ -18,7 +18,7 @@ class CoinUpdateInfo: Decodable {
     let percentChangeForDay: Double?
     let percentChangeForWeek: Double?
     
-    required init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
         
         let array = try container.decode([Any].self)
