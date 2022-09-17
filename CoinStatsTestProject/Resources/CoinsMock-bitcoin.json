@@ -1,0 +1,30 @@
+{
+    "i": "bitcoin",
+    "ic": "https://static.coinstats.app/coins/1650455588819.png",
+    "n": "Bitcoin",
+    "s": "BTC",
+    "r": 1,
+    "pu": 19647,
+    "pb": 1,
+    "v": 35976808069,
+    "m": 376292160267,
+    "a": 19152250,
+    "t": 21000000,
+    "p1": -0.38,
+    "p24": -2.38,
+    "p7": -6.45,
+    "w": "https://bitcoin.org",
+    "p": 34,
+    "pop24": 13.3333,
+    "exp": [
+        "https://blockchair.com/bitcoin/",
+        "https://btc.com/",
+        "https://btc.tokenview.io/"
+    ],
+    "csd": true,
+    "ru": "Bitcoin/",
+    "ls": 99.932,
+    "ds": 99.163,
+    "cs": 82.96,
+    "tu": "btc"
+}

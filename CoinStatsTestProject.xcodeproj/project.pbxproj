@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93C6174A28D515CF00CACED9 /* CoinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6174928D515CF00CACED9 /* CoinResponse.swift */; };
+		93C6174C28D5161900CACED9 /* CoinsListHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6174B28D5161900CACED9 /* CoinsListHeaderViewModel.swift */; };
+		93C6174E28D5199300CACED9 /* UIColor+AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6174D28D5199300CACED9 /* UIColor+AssetCatalog.swift */; };
+		93C6175628D607A300CACED9 /* UnkeyedDecodingContainer+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6175528D607A300CACED9 /* UnkeyedDecodingContainer+Decode.swift */; };
+		93C6175A28D61A3400CACED9 /* CoinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6175928D61A3400CACED9 /* CoinDetailsViewController.swift */; };
+		93C6175C28D61AB400CACED9 /* CoinDetailsViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6175B28D61AB400CACED9 /* CoinDetailsViewControllerAssembly.swift */; };
+		93C6175F28D61B4D00CACED9 /* CoinDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6175E28D61B4D00CACED9 /* CoinDetailViewModel.swift */; };
+		93C6176128D61BEE00CACED9 /* CoinDetailInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176028D61BEE00CACED9 /* CoinDetailInput.swift */; };
+		93C6176328D61CF100CACED9 /* CoinDetailsServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176228D61CF100CACED9 /* CoinDetailsServiceAssembly.swift */; };
+		93C6176628D6475500CACED9 /* CoinDetailsServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176528D6475500CACED9 /* CoinDetailsServicing.swift */; };
+		93C6176828D647D200CACED9 /* CoinDetailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176728D647D200CACED9 /* CoinDetailParams.swift */; };
+		93C6176A28D6494100CACED9 /* CoinDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176928D6494100CACED9 /* CoinDetailsService.swift */; };
+		93C6176C28D6499800CACED9 /* CoinDetailMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176B28D6499800CACED9 /* CoinDetailMockService.swift */; };
+		93C6176E28D663E100CACED9 /* CoinUpdateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176D28D663E100CACED9 /* CoinUpdateInfo.swift */; };
+		93C6177028D6641700CACED9 /* CoinUpdateInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C6176F28D6641700CACED9 /* CoinUpdateInfoResponse.swift */; };
+		93DAC9B428D46B08009C88FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9B328D46B08009C88FA /* AppDelegate.swift */; };
+		93DAC9B628D46B08009C88FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9B528D46B08009C88FA /* SceneDelegate.swift */; };
+		93DAC9BD28D46B08009C88FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DAC9BC28D46B08009C88FA /* Assets.xcassets */; };
+		93DAC9C028D46B08009C88FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DAC9BE28D46B08009C88FA /* LaunchScreen.storyboard */; };
+		93DAC9C928D46FA7009C88FA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 93DAC9C828D46FA7009C88FA /* Swinject */; };
+		93DAC9CC28D4709F009C88FA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 93DAC9CB28D4709F009C88FA /* RxCocoa */; };
+		93DAC9CE28D4709F009C88FA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 93DAC9CD28D4709F009C88FA /* RxRelay */; };
+		93DAC9D028D4709F009C88FA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 93DAC9CF28D4709F009C88FA /* RxSwift */; };
+		93DAC9D428D47308009C88FA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DAC9D328D47308009C88FA /* Colors.xcassets */; };
+		93DAC9DA28D473AF009C88FA /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9D928D473AF009C88FA /* AppEnvironment.swift */; };
+		93DAC9DD28D47463009C88FA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9DC28D47463009C88FA /* NetworkError.swift */; };
+		93DAC9E028D4771F009C88FA /* DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9DF28D4771F009C88FA /* DataFetchable.swift */; };
+		93DAC9E228D4778C009C88FA /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9E128D4778C009C88FA /* Fetchable.swift */; };
+		93DAC9E428D477B1009C88FA /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9E328D477B1009C88FA /* Parsable.swift */; };
+		93DAC9E728D4780D009C88FA /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9E628D4780D009C88FA /* Routing.swift */; };
+		93DAC9E928D47828009C88FA /* RoutingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9E828D47828009C88FA /* RoutingAPI.swift */; };
+		93DAC9EB28D4784D009C88FA /* QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9EA28D4784D009C88FA /* QueryParameter.swift */; };
+		93DAC9ED28D47861009C88FA /* BodyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9EC28D47861009C88FA /* BodyParameter.swift */; };
+		93DAC9EF28D47882009C88FA /* JSONFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9EE28D47882009C88FA /* JSONFetcher.swift */; };
+		93DAC9F128D478C9009C88FA /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9F028D478C9009C88FA /* CommonError.swift */; };
+		93DAC9F328D478ED009C88FA /* URLSessionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9F228D478ED009C88FA /* URLSessionFetcher.swift */; };
+		93DAC9F728D479B3009C88FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9F628D479B3009C88FA /* Constants.swift */; };
+		93DAC9FA28D47B28009C88FA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9F928D47B28009C88FA /* DataSource.swift */; };
+		93DAC9FC28D47B4F009C88FA /* DataSectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9FB28D47B4F009C88FA /* DataSectionable.swift */; };
+		93DAC9FE28D47B74009C88FA /* ViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9FD28D47B74009C88FA /* ViewModeling.swift */; };
+		93DACA0028D47B8A009C88FA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DAC9FF28D47B8A009C88FA /* BaseViewModel.swift */; };
+		93DACA0528D47CD3009C88FA /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA0428D47CD3009C88FA /* Coin.swift */; };
+		93DACA0728D47FB3009C88FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA0628D47FB3009C88FA /* BaseViewController.swift */; };
+		93DACA0928D48009009C88FA /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA0828D48009009C88FA /* GenericTableViewController.swift */; };
+		93DACA0F28D480D2009C88FA /* NIbIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA0E28D480D2009C88FA /* NIbIdentifiable.swift */; };
+		93DACA1128D480F1009C88FA /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA1028D480F1009C88FA /* Setupable.swift */; };
+		93DACA1328D4811B009C88FA /* ProviderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA1228D4811B009C88FA /* ProviderRouter.swift */; };
+		93DACA1528D48182009C88FA /* Emptiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA1428D48182009C88FA /* Emptiable.swift */; };
+		93DACA1728D481A4009C88FA /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA1628D481A4009C88FA /* EmptyModel.swift */; };
+		93DACA1B28D48205009C88FA /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA1A28D48205009C88FA /* MessageModel.swift */; };
+		93DACA2228D482E3009C88FA /* EmptyHeaderAndFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2128D482E3009C88FA /* EmptyHeaderAndFooterView.swift */; };
+		93DACA2428D4836A009C88FA /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2328D4836A009C88FA /* Collection+Safe.swift */; };
+		93DACA2728D483B6009C88FA /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2628D483B6009C88FA /* ProcessingView.swift */; };
+		93DACA2928D483CE009C88FA /* ProcessingView+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2828D483CE009C88FA /* ProcessingView+RX.swift */; };
+		93DACA2B28D48404009C88FA /* ViewSides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2A28D48404009C88FA /* ViewSides.swift */; };
+		93DACA2D28D48424009C88FA /* View+AddSideConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2C28D48424009C88FA /* View+AddSideConstraints.swift */; };
+		93DACA2F28D48458009C88FA /* OptionSetIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA2E28D48458009C88FA /* OptionSetIterator.swift */; };
+		93DACA3128D4846E009C88FA /* OptionSet+MakeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA3028D4846E009C88FA /* OptionSet+MakeIterator.swift */; };
+		93DACA3528D48519009C88FA /* ProcessingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DACA3428D48519009C88FA /* ProcessingView.xib */; };
+		93DACA3928D48586009C88FA /* CoinsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA3828D48586009C88FA /* CoinsListViewController.swift */; };
+		93DACA3B28D485CB009C88FA /* CoinsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA3A28D485CB009C88FA /* CoinsListViewModel.swift */; };
+		93DACA3D28D48600009C88FA /* CoinsListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA3C28D48600009C88FA /* CoinsListCellViewModel.swift */; };
+		93DACA3F28D486A9009C88FA /* CoinsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA3E28D486A9009C88FA /* CoinsSection.swift */; };
+		93DACA4128D4878C009C88FA /* CoinsInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4028D4878C009C88FA /* CoinsInputs.swift */; };
+		93DACA4328D48880009C88FA /* CoinsServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4228D48880009C88FA /* CoinsServicing.swift */; };
+		93DACA4528D489B3009C88FA /* Downloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4428D489B3009C88FA /* Downloadable.swift */; };
+		93DACA4728D489D6009C88FA /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4628D489D6009C88FA /* Downloader.swift */; };
+		93DACA4928D489FB009C88FA /* Cachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4828D489FB009C88FA /* Cachable.swift */; };
+		93DACA4B28D48A15009C88FA /* Cacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4A28D48A15009C88FA /* Cacher.swift */; };
+		93DACA4D28D48A94009C88FA /* DownloadManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4C28D48A94009C88FA /* DownloadManagable.swift */; };
+		93DACA4F28D48AA9009C88FA /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA4E28D48AA9009C88FA /* DownloadManager.swift */; };
+		93DACA5228D48B0C009C88FA /* EncodableParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA5128D48B0C009C88FA /* EncodableParameter.swift */; };
+		93DACA5428D48B4B009C88FA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA5328D48B4B009C88FA /* HTTPMethod.swift */; };
+		93DACA5928D48C10009C88FA /* CoinsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA5728D48C10009C88FA /* CoinsListTableViewCell.swift */; };
+		93DACA5A28D48C10009C88FA /* CoinsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DACA5828D48C10009C88FA /* CoinsListTableViewCell.xib */; };
+		93DACA5D28D49D19009C88FA /* ViewControllerPorivder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA5C28D49D19009C88FA /* ViewControllerPorivder.swift */; };
+		93DACA6028D49DF2009C88FA /* CoinsServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA5F28D49DF2009C88FA /* CoinsServiceAssembly.swift */; };
+		93DACA6228D49E50009C88FA /* CoinsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6128D49E50009C88FA /* CoinsService.swift */; };
+		93DACA6428D49EAD009C88FA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6328D49EAD009C88FA /* Service.swift */; };
+		93DACA6728D49F02009C88FA /* DataFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6628D49F02009C88FA /* DataFetchManager.swift */; };
+		93DACA6928D49F9B009C88FA /* CoinsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6828D49F9B009C88FA /* CoinsParams.swift */; };
+		93DACA6B28D4A090009C88FA /* DataFetchManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6A28D4A090009C88FA /* DataFetchManagerProvider.swift */; };
+		93DACA6D28D4A10C009C88FA /* JSONDecoderParserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6C28D4A10C009C88FA /* JSONDecoderParserAssembly.swift */; };
+		93DACA6F28D4A153009C88FA /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA6E28D4A153009C88FA /* JsonDecoder.swift */; };
+		93DACA7128D4A1B3009C88FA /* CoinsListViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7028D4A1B3009C88FA /* CoinsListViewControllerAssembly.swift */; };
+		93DACA7328D4A21D009C88FA /* JSONFetcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7228D4A21D009C88FA /* JSONFetcherAssembly.swift */; };
+		93DACA7528D4A241009C88FA /* URLSessionFetcherAassembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7428D4A241009C88FA /* URLSessionFetcherAassembly.swift */; };
+		93DACA7728D4A2D1009C88FA /* DataFetchableAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7628D4A2D1009C88FA /* DataFetchableAssembly.swift */; };
+		93DACA7928D4A441009C88FA /* CacherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7828D4A441009C88FA /* CacherAssembly.swift */; };
+		93DACA7B28D4A458009C88FA /* DownloaderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7A28D4A458009C88FA /* DownloaderAssembly.swift */; };
+		93DACA7D28D4A476009C88FA /* DownloadingManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA7C28D4A476009C88FA /* DownloadingManagerAssembly.swift */; };
+		93DACA8128D4BF68009C88FA /* CoinsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 93DACA8028D4BF68009C88FA /* CoinsMock.json */; };
+		93DACA8528D4CDC4009C88FA /* CoinsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA8428D4CDC4009C88FA /* CoinsMockService.swift */; };
+		93DACA8828D4E1BF009C88FA /* CoinsListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DACA8728D4E1BF009C88FA /* CoinsListHeaderView.swift */; };
+		93DACA8A28D4E779009C88FA /* CoinsListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DACA8928D4E779009C88FA /* CoinsListHeaderView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93C6174928D515CF00CACED9 /* CoinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinResponse.swift; sourceTree = "<group>"; };
+		93C6174B28D5161900CACED9 /* CoinsListHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListHeaderViewModel.swift; sourceTree = "<group>"; };
+		93C6174D28D5199300CACED9 /* UIColor+AssetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AssetCatalog.swift"; sourceTree = "<group>"; };
+		93C6175528D607A300CACED9 /* UnkeyedDecodingContainer+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnkeyedDecodingContainer+Decode.swift"; sourceTree = "<group>"; };
+		93C6175928D61A3400CACED9 /* CoinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewController.swift; sourceTree = "<group>"; };
+		93C6175B28D61AB400CACED9 /* CoinDetailsViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewControllerAssembly.swift; sourceTree = "<group>"; };
+		93C6175E28D61B4D00CACED9 /* CoinDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModel.swift; sourceTree = "<group>"; };
+		93C6176028D61BEE00CACED9 /* CoinDetailInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailInput.swift; sourceTree = "<group>"; };
+		93C6176228D61CF100CACED9 /* CoinDetailsServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsServiceAssembly.swift; sourceTree = "<group>"; };
+		93C6176528D6475500CACED9 /* CoinDetailsServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsServicing.swift; sourceTree = "<group>"; };
+		93C6176728D647D200CACED9 /* CoinDetailParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailParams.swift; sourceTree = "<group>"; };
+		93C6176928D6494100CACED9 /* CoinDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsService.swift; sourceTree = "<group>"; };
+		93C6176B28D6499800CACED9 /* CoinDetailMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailMockService.swift; sourceTree = "<group>"; };
+		93C6176D28D663E100CACED9 /* CoinUpdateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinUpdateInfo.swift; sourceTree = "<group>"; };
+		93C6176F28D6641700CACED9 /* CoinUpdateInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinUpdateInfoResponse.swift; sourceTree = "<group>"; };
+		93C6177128D67B6700CACED9 /* CoinsMock-bitcoin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CoinsMock-bitcoin.json"; sourceTree = "<group>"; };
+		93C6177228D67DC700CACED9 /* CoinsUpdateInfoMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoinsUpdateInfoMock.json; sourceTree = "<group>"; };
+		93DAC9B028D46B08009C88FA /* CoinStatsTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinStatsTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93DAC9B328D46B08009C88FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93DAC9B528D46B08009C88FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93DAC9BC28D46B08009C88FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93DAC9BF28D46B08009C88FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93DAC9C128D46B08009C88FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DAC9D328D47308009C88FA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		93DAC9D928D473AF009C88FA /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		93DAC9DC28D47463009C88FA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		93DAC9DF28D4771F009C88FA /* DataFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchable.swift; sourceTree = "<group>"; };
+		93DAC9E128D4778C009C88FA /* Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		93DAC9E328D477B1009C88FA /* Parsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		93DAC9E628D4780D009C88FA /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		93DAC9E828D47828009C88FA /* RoutingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAPI.swift; sourceTree = "<group>"; };
+		93DAC9EA28D4784D009C88FA /* QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParameter.swift; sourceTree = "<group>"; };
+		93DAC9EC28D47861009C88FA /* BodyParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameter.swift; sourceTree = "<group>"; };
+		93DAC9EE28D47882009C88FA /* JSONFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetcher.swift; sourceTree = "<group>"; };
+		93DAC9F028D478C9009C88FA /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		93DAC9F228D478ED009C88FA /* URLSessionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFetcher.swift; sourceTree = "<group>"; };
+		93DAC9F628D479B3009C88FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93DAC9F928D47B28009C88FA /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		93DAC9FB28D47B4F009C88FA /* DataSectionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSectionable.swift; sourceTree = "<group>"; };
+		93DAC9FD28D47B74009C88FA /* ViewModeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModeling.swift; sourceTree = "<group>"; };
+		93DAC9FF28D47B8A009C88FA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		93DACA0428D47CD3009C88FA /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		93DACA0628D47FB3009C88FA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		93DACA0828D48009009C88FA /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		93DACA0E28D480D2009C88FA /* NIbIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIbIdentifiable.swift; sourceTree = "<group>"; };
+		93DACA1028D480F1009C88FA /* Setupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		93DACA1228D4811B009C88FA /* ProviderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderRouter.swift; sourceTree = "<group>"; };
+		93DACA1428D48182009C88FA /* Emptiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emptiable.swift; sourceTree = "<group>"; };
+		93DACA1628D481A4009C88FA /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		93DACA1A28D48205009C88FA /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		93DACA2128D482E3009C88FA /* EmptyHeaderAndFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHeaderAndFooterView.swift; sourceTree = "<group>"; };
+		93DACA2328D4836A009C88FA /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		93DACA2628D483B6009C88FA /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		93DACA2828D483CE009C88FA /* ProcessingView+RX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessingView+RX.swift"; sourceTree = "<group>"; };
+		93DACA2A28D48404009C88FA /* ViewSides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSides.swift; sourceTree = "<group>"; };
+		93DACA2C28D48424009C88FA /* View+AddSideConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AddSideConstraints.swift"; sourceTree = "<group>"; };
+		93DACA2E28D48458009C88FA /* OptionSetIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSetIterator.swift; sourceTree = "<group>"; };
+		93DACA3028D4846E009C88FA /* OptionSet+MakeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionSet+MakeIterator.swift"; sourceTree = "<group>"; };
+		93DACA3428D48519009C88FA /* ProcessingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessingView.xib; sourceTree = "<group>"; };
+		93DACA3828D48586009C88FA /* CoinsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewController.swift; sourceTree = "<group>"; };
+		93DACA3A28D485CB009C88FA /* CoinsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewModel.swift; sourceTree = "<group>"; };
+		93DACA3C28D48600009C88FA /* CoinsListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListCellViewModel.swift; sourceTree = "<group>"; };
+		93DACA3E28D486A9009C88FA /* CoinsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsSection.swift; sourceTree = "<group>"; };
+		93DACA4028D4878C009C88FA /* CoinsInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsInputs.swift; sourceTree = "<group>"; };
+		93DACA4228D48880009C88FA /* CoinsServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsServicing.swift; sourceTree = "<group>"; };
+		93DACA4428D489B3009C88FA /* Downloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloadable.swift; sourceTree = "<group>"; };
+		93DACA4628D489D6009C88FA /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		93DACA4828D489FB009C88FA /* Cachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cachable.swift; sourceTree = "<group>"; };
+		93DACA4A28D48A15009C88FA /* Cacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacher.swift; sourceTree = "<group>"; };
+		93DACA4C28D48A94009C88FA /* DownloadManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagable.swift; sourceTree = "<group>"; };
+		93DACA4E28D48AA9009C88FA /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		93DACA5128D48B0C009C88FA /* EncodableParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableParameter.swift; sourceTree = "<group>"; };
+		93DACA5328D48B4B009C88FA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		93DACA5728D48C10009C88FA /* CoinsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListTableViewCell.swift; sourceTree = "<group>"; };
+		93DACA5828D48C10009C88FA /* CoinsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinsListTableViewCell.xib; sourceTree = "<group>"; };
+		93DACA5C28D49D19009C88FA /* ViewControllerPorivder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPorivder.swift; sourceTree = "<group>"; };
+		93DACA5F28D49DF2009C88FA /* CoinsServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsServiceAssembly.swift; sourceTree = "<group>"; };
+		93DACA6128D49E50009C88FA /* CoinsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsService.swift; sourceTree = "<group>"; };
+		93DACA6328D49EAD009C88FA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		93DACA6628D49F02009C88FA /* DataFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManager.swift; sourceTree = "<group>"; };
+		93DACA6828D49F9B009C88FA /* CoinsParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsParams.swift; sourceTree = "<group>"; };
+		93DACA6A28D4A090009C88FA /* DataFetchManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManagerProvider.swift; sourceTree = "<group>"; };
+		93DACA6C28D4A10C009C88FA /* JSONDecoderParserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderParserAssembly.swift; sourceTree = "<group>"; };
+		93DACA6E28D4A153009C88FA /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		93DACA7028D4A1B3009C88FA /* CoinsListViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewControllerAssembly.swift; sourceTree = "<group>"; };
+		93DACA7228D4A21D009C88FA /* JSONFetcherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetcherAssembly.swift; sourceTree = "<group>"; };
+		93DACA7428D4A241009C88FA /* URLSessionFetcherAassembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFetcherAassembly.swift; sourceTree = "<group>"; };
+		93DACA7628D4A2D1009C88FA /* DataFetchableAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchableAssembly.swift; sourceTree = "<group>"; };
+		93DACA7828D4A441009C88FA /* CacherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacherAssembly.swift; sourceTree = "<group>"; };
+		93DACA7A28D4A458009C88FA /* DownloaderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderAssembly.swift; sourceTree = "<group>"; };
+		93DACA7C28D4A476009C88FA /* DownloadingManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingManagerAssembly.swift; sourceTree = "<group>"; };
+		93DACA8028D4BF68009C88FA /* CoinsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoinsMock.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		93DACA8428D4CDC4009C88FA /* CoinsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMockService.swift; sourceTree = "<group>"; };
+		93DACA8728D4E1BF009C88FA /* CoinsListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListHeaderView.swift; sourceTree = "<group>"; };
+		93DACA8928D4E779009C88FA /* CoinsListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinsListHeaderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93DAC9AD28D46B08009C88FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DAC9CE28D4709F009C88FA /* RxRelay in Frameworks */,
+				93DAC9CC28D4709F009C88FA /* RxCocoa in Frameworks */,
+				93DAC9D028D4709F009C88FA /* RxSwift in Frameworks */,
+				93DAC9C928D46FA7009C88FA /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93C6175D28D61B2600CACED9 /* CoinDetails */ = {
+			isa = PBXGroup;
+			children = (
+				93C6175E28D61B4D00CACED9 /* CoinDetailViewModel.swift */,
+				93C6176028D61BEE00CACED9 /* CoinDetailInput.swift */,
+				93C6176728D647D200CACED9 /* CoinDetailParams.swift */,
+			);
+			path = CoinDetails;
+			sourceTree = "<group>";
+		};
+		93C6176428D61D3C00CACED9 /* CoinDetails */ = {
+			isa = PBXGroup;
+			children = (
+				93C6175928D61A3400CACED9 /* CoinDetailsViewController.swift */,
+			);
+			path = CoinDetails;
+			sourceTree = "<group>";
+		};
+		93DAC9A728D46B07009C88FA = {
+			isa = PBXGroup;
+			children = (
+				93DAC9B228D46B08009C88FA /* CoinStatsTestProject */,
+				93DAC9B128D46B08009C88FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93DAC9B128D46B08009C88FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9B028D46B08009C88FA /* CoinStatsTestProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93DAC9B228D46B08009C88FA /* CoinStatsTestProject */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9D728D47355009C88FA /* Model */,
+				93DAC9D528D4733C009C88FA /* View */,
+				93DAC9D628D47342009C88FA /* ViewModel */,
+				93DAC9D828D4736A009C88FA /* Utilities */,
+				93DAC9D128D47135009C88FA /* SupportingFiles */,
+				93DAC9D228D472AD009C88FA /* Resources */,
+			);
+			path = CoinStatsTestProject;
+			sourceTree = "<group>";
+		};
+		93DAC9D128D47135009C88FA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9B328D46B08009C88FA /* AppDelegate.swift */,
+				93DAC9B528D46B08009C88FA /* SceneDelegate.swift */,
+				93DAC9C128D46B08009C88FA /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		93DAC9D228D472AD009C88FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9BE28D46B08009C88FA /* LaunchScreen.storyboard */,
+				93DAC9BC28D46B08009C88FA /* Assets.xcassets */,
+				93DAC9D328D47308009C88FA /* Colors.xcassets */,
+				93DACA8028D4BF68009C88FA /* CoinsMock.json */,
+				93C6177128D67B6700CACED9 /* CoinsMock-bitcoin.json */,
+				93C6177228D67DC700CACED9 /* CoinsUpdateInfoMock.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93DAC9D528D4733C009C88FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA3628D48559009C88FA /* CoinsList */,
+				93C6176428D61D3C00CACED9 /* CoinDetails */,
+				93DACA2528D483AC009C88FA /* ProcessingView */,
+				93DACA0628D47FB3009C88FA /* BaseViewController.swift */,
+				93DACA0828D48009009C88FA /* GenericTableViewController.swift */,
+				93DACA2128D482E3009C88FA /* EmptyHeaderAndFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93DAC9D628D47342009C88FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9F828D47B1B009C88FA /* Base */,
+				93DACA0328D47BDA009C88FA /* CoinsList */,
+				93C6175D28D61B2600CACED9 /* CoinDetails */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93DAC9D728D47355009C88FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA1A28D48205009C88FA /* MessageModel.swift */,
+				93DACA0428D47CD3009C88FA /* Coin.swift */,
+				93C6174928D515CF00CACED9 /* CoinResponse.swift */,
+				93C6176D28D663E100CACED9 /* CoinUpdateInfo.swift */,
+				93C6176F28D6641700CACED9 /* CoinUpdateInfoResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93DAC9D828D4736A009C88FA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA5E28D49DB0009C88FA /* Assemblies */,
+				93DACA5B28D49D08009C88FA /* Providers */,
+				93DACA1C28D4826B009C88FA /* Extensions */,
+				93DACA0D28D480AE009C88FA /* Protocols */,
+				93DAC9E528D477E6009C88FA /* Routing */,
+				93DAC9DE28D47706009C88FA /* Services */,
+				93DAC9DB28D47459009C88FA /* Errors */,
+				93DAC9D928D473AF009C88FA /* AppEnvironment.swift */,
+				93DAC9F628D479B3009C88FA /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		93DAC9DB28D47459009C88FA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9DC28D47463009C88FA /* NetworkError.swift */,
+				93DAC9F028D478C9009C88FA /* CommonError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		93DAC9DE28D47706009C88FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA6528D49EBE009C88FA /* Protocols */,
+				93DACA6328D49EAD009C88FA /* Service.swift */,
+				93DACA6628D49F02009C88FA /* DataFetchManager.swift */,
+				93DACA6128D49E50009C88FA /* CoinsService.swift */,
+				93DACA8428D4CDC4009C88FA /* CoinsMockService.swift */,
+				93C6176928D6494100CACED9 /* CoinDetailsService.swift */,
+				93C6176B28D6499800CACED9 /* CoinDetailMockService.swift */,
+				93DACA6E28D4A153009C88FA /* JsonDecoder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		93DAC9E528D477E6009C88FA /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA5028D48AD3009C88FA /* Protocols */,
+				93DACA5328D48B4B009C88FA /* HTTPMethod.swift */,
+				93DAC9F228D478ED009C88FA /* URLSessionFetcher.swift */,
+				93DAC9EA28D4784D009C88FA /* QueryParameter.swift */,
+				93DAC9EC28D47861009C88FA /* BodyParameter.swift */,
+				93DAC9EE28D47882009C88FA /* JSONFetcher.swift */,
+				93DACA4628D489D6009C88FA /* Downloader.swift */,
+				93DACA4A28D48A15009C88FA /* Cacher.swift */,
+				93DACA4E28D48AA9009C88FA /* DownloadManager.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		93DAC9F828D47B1B009C88FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9F928D47B28009C88FA /* DataSource.swift */,
+				93DAC9FB28D47B4F009C88FA /* DataSectionable.swift */,
+				93DAC9FD28D47B74009C88FA /* ViewModeling.swift */,
+				93DAC9FF28D47B8A009C88FA /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		93DACA0328D47BDA009C88FA /* CoinsList */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA3A28D485CB009C88FA /* CoinsListViewModel.swift */,
+				93DACA3C28D48600009C88FA /* CoinsListCellViewModel.swift */,
+				93C6174B28D5161900CACED9 /* CoinsListHeaderViewModel.swift */,
+				93DACA3E28D486A9009C88FA /* CoinsSection.swift */,
+				93DACA4028D4878C009C88FA /* CoinsInputs.swift */,
+				93DACA6828D49F9B009C88FA /* CoinsParams.swift */,
+			);
+			path = CoinsList;
+			sourceTree = "<group>";
+		};
+		93DACA0D28D480AE009C88FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA1228D4811B009C88FA /* ProviderRouter.swift */,
+				93DACA1428D48182009C88FA /* Emptiable.swift */,
+				93DACA1628D481A4009C88FA /* EmptyModel.swift */,
+				93DACA1028D480F1009C88FA /* Setupable.swift */,
+				93DACA0E28D480D2009C88FA /* NIbIdentifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		93DACA1C28D4826B009C88FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA2328D4836A009C88FA /* Collection+Safe.swift */,
+				93DACA2A28D48404009C88FA /* ViewSides.swift */,
+				93DACA2C28D48424009C88FA /* View+AddSideConstraints.swift */,
+				93DACA2E28D48458009C88FA /* OptionSetIterator.swift */,
+				93DACA3028D4846E009C88FA /* OptionSet+MakeIterator.swift */,
+				93C6174D28D5199300CACED9 /* UIColor+AssetCatalog.swift */,
+				93C6175528D607A300CACED9 /* UnkeyedDecodingContainer+Decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93DACA2528D483AC009C88FA /* ProcessingView */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA3428D48519009C88FA /* ProcessingView.xib */,
+				93DACA2628D483B6009C88FA /* ProcessingView.swift */,
+				93DACA2828D483CE009C88FA /* ProcessingView+RX.swift */,
+			);
+			path = ProcessingView;
+			sourceTree = "<group>";
+		};
+		93DACA3628D48559009C88FA /* CoinsList */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA8628D4E182009C88FA /* HeaderView */,
+				93DACA3728D48565009C88FA /* Cell */,
+				93DACA3828D48586009C88FA /* CoinsListViewController.swift */,
+			);
+			path = CoinsList;
+			sourceTree = "<group>";
+		};
+		93DACA3728D48565009C88FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA5728D48C10009C88FA /* CoinsListTableViewCell.swift */,
+				93DACA5828D48C10009C88FA /* CoinsListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		93DACA5028D48AD3009C88FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9E828D47828009C88FA /* RoutingAPI.swift */,
+				93DAC9E628D4780D009C88FA /* Routing.swift */,
+				93DACA5128D48B0C009C88FA /* EncodableParameter.swift */,
+				93DACA4428D489B3009C88FA /* Downloadable.swift */,
+				93DACA4828D489FB009C88FA /* Cachable.swift */,
+				93DACA4C28D48A94009C88FA /* DownloadManagable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		93DACA5B28D49D08009C88FA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA5C28D49D19009C88FA /* ViewControllerPorivder.swift */,
+				93DACA6A28D4A090009C88FA /* DataFetchManagerProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		93DACA5E28D49DB0009C88FA /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA6C28D4A10C009C88FA /* JSONDecoderParserAssembly.swift */,
+				93DACA7028D4A1B3009C88FA /* CoinsListViewControllerAssembly.swift */,
+				93C6175B28D61AB400CACED9 /* CoinDetailsViewControllerAssembly.swift */,
+				93DACA5F28D49DF2009C88FA /* CoinsServiceAssembly.swift */,
+				93C6176228D61CF100CACED9 /* CoinDetailsServiceAssembly.swift */,
+				93DACA7228D4A21D009C88FA /* JSONFetcherAssembly.swift */,
+				93DACA7428D4A241009C88FA /* URLSessionFetcherAassembly.swift */,
+				93DACA7628D4A2D1009C88FA /* DataFetchableAssembly.swift */,
+				93DACA7828D4A441009C88FA /* CacherAssembly.swift */,
+				93DACA7A28D4A458009C88FA /* DownloaderAssembly.swift */,
+				93DACA7C28D4A476009C88FA /* DownloadingManagerAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		93DACA6528D49EBE009C88FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93DAC9DF28D4771F009C88FA /* DataFetchable.swift */,
+				93DAC9E128D4778C009C88FA /* Fetchable.swift */,
+				93DAC9E328D477B1009C88FA /* Parsable.swift */,
+				93DACA4228D48880009C88FA /* CoinsServicing.swift */,
+				93C6176528D6475500CACED9 /* CoinDetailsServicing.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		93DACA8628D4E182009C88FA /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				93DACA8728D4E1BF009C88FA /* CoinsListHeaderView.swift */,
+				93DACA8928D4E779009C88FA /* CoinsListHeaderView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93DAC9AF28D46B08009C88FA /* CoinStatsTestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93DAC9C428D46B08009C88FA /* Build configuration list for PBXNativeTarget "CoinStatsTestProject" */;
+			buildPhases = (
+				93DAC9AC28D46B08009C88FA /* Sources */,
+				93DAC9AD28D46B08009C88FA /* Frameworks */,
+				93DAC9AE28D46B08009C88FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinStatsTestProject;
+			packageProductDependencies = (
+				93DAC9C828D46FA7009C88FA /* Swinject */,
+				93DAC9CB28D4709F009C88FA /* RxCocoa */,
+				93DAC9CD28D4709F009C88FA /* RxRelay */,
+				93DAC9CF28D4709F009C88FA /* RxSwift */,
+			);
+			productName = CoinStatsTestProject;
+			productReference = 93DAC9B028D46B08009C88FA /* CoinStatsTestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93DAC9A828D46B07009C88FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					93DAC9AF28D46B08009C88FA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 93DAC9AB28D46B07009C88FA /* Build configuration list for PBXProject "CoinStatsTestProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93DAC9A728D46B07009C88FA;
+			packageReferences = (
+				93DAC9C728D46FA7009C88FA /* XCRemoteSwiftPackageReference "Swinject" */,
+				93DAC9CA28D4709F009C88FA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 93DAC9B128D46B08009C88FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93DAC9AF28D46B08009C88FA /* CoinStatsTestProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93DAC9AE28D46B08009C88FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DAC9C028D46B08009C88FA /* LaunchScreen.storyboard in Resources */,
+				93DAC9D428D47308009C88FA /* Colors.xcassets in Resources */,
+				93DACA3528D48519009C88FA /* ProcessingView.xib in Resources */,
+				93DAC9BD28D46B08009C88FA /* Assets.xcassets in Resources */,
+				93DACA8A28D4E779009C88FA /* CoinsListHeaderView.xib in Resources */,
+				93DACA5A28D48C10009C88FA /* CoinsListTableViewCell.xib in Resources */,
+				93DACA8128D4BF68009C88FA /* CoinsMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93DAC9AC28D46B08009C88FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DACA0928D48009009C88FA /* GenericTableViewController.swift in Sources */,
+				93DACA7328D4A21D009C88FA /* JSONFetcherAssembly.swift in Sources */,
+				93DACA5228D48B0C009C88FA /* EncodableParameter.swift in Sources */,
+				93DACA4F28D48AA9009C88FA /* DownloadManager.swift in Sources */,
+				93DACA8528D4CDC4009C88FA /* CoinsMockService.swift in Sources */,
+				93DACA2D28D48424009C88FA /* View+AddSideConstraints.swift in Sources */,
+				93C6175628D607A300CACED9 /* UnkeyedDecodingContainer+Decode.swift in Sources */,
+				93DAC9E028D4771F009C88FA /* DataFetchable.swift in Sources */,
+				93DACA3128D4846E009C88FA /* OptionSet+MakeIterator.swift in Sources */,
+				93C6174E28D5199300CACED9 /* UIColor+AssetCatalog.swift in Sources */,
+				93DACA2428D4836A009C88FA /* Collection+Safe.swift in Sources */,
+				93DACA4B28D48A15009C88FA /* Cacher.swift in Sources */,
+				93DAC9F728D479B3009C88FA /* Constants.swift in Sources */,
+				93DACA3B28D485CB009C88FA /* CoinsListViewModel.swift in Sources */,
+				93C6176628D6475500CACED9 /* CoinDetailsServicing.swift in Sources */,
+				93DACA6D28D4A10C009C88FA /* JSONDecoderParserAssembly.swift in Sources */,
+				93DACA7928D4A441009C88FA /* CacherAssembly.swift in Sources */,
+				93DACA2B28D48404009C88FA /* ViewSides.swift in Sources */,
+				93C6177028D6641700CACED9 /* CoinUpdateInfoResponse.swift in Sources */,
+				93DACA6928D49F9B009C88FA /* CoinsParams.swift in Sources */,
+				93DACA6428D49EAD009C88FA /* Service.swift in Sources */,
+				93C6176128D61BEE00CACED9 /* CoinDetailInput.swift in Sources */,
+				93DAC9F128D478C9009C88FA /* CommonError.swift in Sources */,
+				93DACA1328D4811B009C88FA /* ProviderRouter.swift in Sources */,
+				93DACA2928D483CE009C88FA /* ProcessingView+RX.swift in Sources */,
+				93DACA7528D4A241009C88FA /* URLSessionFetcherAassembly.swift in Sources */,
+				93DACA0728D47FB3009C88FA /* BaseViewController.swift in Sources */,
+				93DAC9EB28D4784D009C88FA /* QueryParameter.swift in Sources */,
+				93DACA2F28D48458009C88FA /* OptionSetIterator.swift in Sources */,
+				93DAC9DA28D473AF009C88FA /* AppEnvironment.swift in Sources */,
+				93DAC9E428D477B1009C88FA /* Parsable.swift in Sources */,
+				93DAC9FE28D47B74009C88FA /* ViewModeling.swift in Sources */,
+				93DAC9B428D46B08009C88FA /* AppDelegate.swift in Sources */,
+				93DAC9E928D47828009C88FA /* RoutingAPI.swift in Sources */,
+				93DAC9FC28D47B4F009C88FA /* DataSectionable.swift in Sources */,
+				93DACA1528D48182009C88FA /* Emptiable.swift in Sources */,
+				93DACA3D28D48600009C88FA /* CoinsListCellViewModel.swift in Sources */,
+				93DACA4328D48880009C88FA /* CoinsServicing.swift in Sources */,
+				93DACA2728D483B6009C88FA /* ProcessingView.swift in Sources */,
+				93DACA4128D4878C009C88FA /* CoinsInputs.swift in Sources */,
+				93DACA2228D482E3009C88FA /* EmptyHeaderAndFooterView.swift in Sources */,
+				93C6175F28D61B4D00CACED9 /* CoinDetailViewModel.swift in Sources */,
+				93C6176E28D663E100CACED9 /* CoinUpdateInfo.swift in Sources */,
+				93C6176C28D6499800CACED9 /* CoinDetailMockService.swift in Sources */,
+				93DACA3F28D486A9009C88FA /* CoinsSection.swift in Sources */,
+				93DAC9E728D4780D009C88FA /* Routing.swift in Sources */,
+				93DACA0528D47CD3009C88FA /* Coin.swift in Sources */,
+				93DACA7128D4A1B3009C88FA /* CoinsListViewControllerAssembly.swift in Sources */,
+				93C6176328D61CF100CACED9 /* CoinDetailsServiceAssembly.swift in Sources */,
+				93DACA4528D489B3009C88FA /* Downloadable.swift in Sources */,
+				93DACA1B28D48205009C88FA /* MessageModel.swift in Sources */,
+				93DACA5D28D49D19009C88FA /* ViewControllerPorivder.swift in Sources */,
+				93DACA5428D48B4B009C88FA /* HTTPMethod.swift in Sources */,
+				93DAC9F328D478ED009C88FA /* URLSessionFetcher.swift in Sources */,
+				93DACA7D28D4A476009C88FA /* DownloadingManagerAssembly.swift in Sources */,
+				93C6174C28D5161900CACED9 /* CoinsListHeaderViewModel.swift in Sources */,
+				93DACA6F28D4A153009C88FA /* JsonDecoder.swift in Sources */,
+				93C6176828D647D200CACED9 /* CoinDetailParams.swift in Sources */,
+				93DAC9FA28D47B28009C88FA /* DataSource.swift in Sources */,
+				93DAC9B628D46B08009C88FA /* SceneDelegate.swift in Sources */,
+				93DACA7B28D4A458009C88FA /* DownloaderAssembly.swift in Sources */,
+				93DACA6B28D4A090009C88FA /* DataFetchManagerProvider.swift in Sources */,
+				93DACA3928D48586009C88FA /* CoinsListViewController.swift in Sources */,
+				93DAC9ED28D47861009C88FA /* BodyParameter.swift in Sources */,
+				93DACA0028D47B8A009C88FA /* BaseViewModel.swift in Sources */,
+				93C6176A28D6494100CACED9 /* CoinDetailsService.swift in Sources */,
+				93DACA4928D489FB009C88FA /* Cachable.swift in Sources */,
+				93DACA6028D49DF2009C88FA /* CoinsServiceAssembly.swift in Sources */,
+				93DACA7728D4A2D1009C88FA /* DataFetchableAssembly.swift in Sources */,
+				93DACA4D28D48A94009C88FA /* DownloadManagable.swift in Sources */,
+				93DACA4728D489D6009C88FA /* Downloader.swift in Sources */,
+				93DACA6728D49F02009C88FA /* DataFetchManager.swift in Sources */,
+				93DACA1128D480F1009C88FA /* Setupable.swift in Sources */,
+				93C6175C28D61AB400CACED9 /* CoinDetailsViewControllerAssembly.swift in Sources */,
+				93DACA8828D4E1BF009C88FA /* CoinsListHeaderView.swift in Sources */,
+				93DACA6228D49E50009C88FA /* CoinsService.swift in Sources */,
+				93C6175A28D61A3400CACED9 /* CoinDetailsViewController.swift in Sources */,
+				93DACA5928D48C10009C88FA /* CoinsListTableViewCell.swift in Sources */,
+				93DACA1728D481A4009C88FA /* EmptyModel.swift in Sources */,
+				93DAC9DD28D47463009C88FA /* NetworkError.swift in Sources */,
+				93DAC9E228D4778C009C88FA /* Fetchable.swift in Sources */,
+				93DACA0F28D480D2009C88FA /* NIbIdentifiable.swift in Sources */,
+				93C6174A28D515CF00CACED9 /* CoinResponse.swift in Sources */,
+				93DAC9EF28D47882009C88FA /* JSONFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93DAC9BE28D46B08009C88FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93DAC9BF28D46B08009C88FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93C6175128D5BB9D00CACED9 /* DebugMock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DebugMock;
+		};
+		93C6175228D5BB9D00CACED9 /* DebugMock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VGFAP2KX78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinStatsTestProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test Project";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coinStats.CoinStatsTestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG MOCK";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DebugMock;
+		};
+		93DAC9C228D46B08009C88FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93DAC9C328D46B08009C88FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93DAC9C528D46B08009C88FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VGFAP2KX78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinStatsTestProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test Project";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coinStats.CoinStatsTestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93DAC9C628D46B08009C88FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VGFAP2KX78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinStatsTestProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test Project";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coinStats.CoinStatsTestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93DAC9AB28D46B07009C88FA /* Build configuration list for PBXProject "CoinStatsTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DAC9C228D46B08009C88FA /* Debug */,
+				93C6175128D5BB9D00CACED9 /* DebugMock */,
+				93DAC9C328D46B08009C88FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93DAC9C428D46B08009C88FA /* Build configuration list for PBXNativeTarget "CoinStatsTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93DAC9C528D46B08009C88FA /* Debug */,
+				93C6175228D5BB9D00CACED9 /* DebugMock */,
+				93DAC9C628D46B08009C88FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93DAC9C728D46FA7009C88FA /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		93DAC9CA28D4709F009C88FA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93DAC9C828D46FA7009C88FA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93DAC9C728D46FA7009C88FA /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		93DAC9CB28D4709F009C88FA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93DAC9CA28D4709F009C88FA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		93DAC9CD28D4709F009C88FA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93DAC9CA28D4709F009C88FA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		93DAC9CF28D4709F009C88FA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93DAC9CA28D4709F009C88FA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 93DAC9A828D46B07009C88FA /* Project object */;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CoinsListHeaderView" customModule="CoinStatsTestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8l-hy-WIy">
+                    <rect key="frame" x="16.000000000000004" y="11" width="45.333333333333343" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" name="CSGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ3-pe-8Jh">
+                    <rect key="frame" x="212.33333333333334" y="13.666666666666664" width="36.666666666666657" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" name="CSGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-hF-cBj">
+                    <rect key="frame" x="322.33333333333331" y="14.333333333333332" width="6" height="15.333333333333332"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_triangle_top" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-HV-Xvl">
+                            <rect key="frame" x="0.0" y="0.0" width="6" height="5.666666666666667"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_triangle_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="42M-bF-lM9">
+                            <rect key="frame" x="0.0" y="9.6666666666666661" width="6" height="5.6666666666666661"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-Dt-phZ">
+                    <rect key="frame" x="337.33333333333331" y="11" width="36.666666666666686" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" name="CSBlack"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="A8l-hy-WIy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="6Hj-SA-3hT"/>
+                <constraint firstAttribute="bottom" secondItem="A8l-hy-WIy" secondAttribute="bottom" constant="11" id="9bY-xA-bxl"/>
+                <constraint firstItem="NJ3-pe-8Jh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DRy-ke-t6d"/>
+                <constraint firstItem="A8l-hy-WIy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Llc-WT-2Xo"/>
+                <constraint firstItem="YqR-Dt-phZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="QqD-DA-jXX"/>
+                <constraint firstItem="HJP-hF-cBj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TWp-DC-btQ"/>
+                <constraint firstItem="NJ3-pe-8Jh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.183" id="fGS-FT-BtE"/>
+                <constraint firstItem="YqR-Dt-phZ" firstAttribute="leading" secondItem="HJP-hF-cBj" secondAttribute="trailing" constant="9" id="spj-8r-bCq"/>
+                <constraint firstAttribute="bottom" secondItem="YqR-Dt-phZ" secondAttribute="bottom" constant="11" id="vvi-Ak-Xed"/>
+                <constraint firstAttribute="trailing" secondItem="YqR-Dt-phZ" secondAttribute="trailing" constant="16" id="wNn-w0-aCN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coinLabel" destination="A8l-hy-WIy" id="lIX-K4-xey"/>
+                <outlet property="hoursLabel" destination="NJ3-pe-8Jh" id="9mM-SR-2gc"/>
+                <outlet property="priceLabel" destination="YqR-Dt-phZ" id="klV-Af-Sc8"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_triangle_bottom" width="6" height="5.6666665077209473"/>
+        <image name="ic_triangle_top" width="6" height="5.6666665077209473"/>
+        <namedColor name="CSBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CSGray">
+            <color red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
